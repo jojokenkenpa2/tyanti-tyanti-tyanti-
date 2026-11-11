@@ -1,0 +1,106 @@
+/* ── Linked Stylesheets ──
+   https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap
+   https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap
+*/
+
+/* Hide visible CloudMoon & Playwire/GAM/Ad-Shield ad containers without touching 1x1 -9999px bait elements (.ad-banner, #ad-banner, ins.adsbygoogle) */
+.mpu-card,
+.gam-wrapper,
+.gam-mpu,
+.floating-video,
+aside[aria-label="Video advertisement"],
+aside[aria-label="Advertisement"],
+.anchor-banner,
+.anchor-wrapper,
+.a-div-vertical,
+.a-div-horizontal,
+.a-div-video,
+#lyt1-left-img-div,
+#lyt1-right-img-div,
+#lyt2-left-img-div,
+#lyt2-right-img-div,
+#lyt3-top-img-div,
+#lyt3-bottom-img-div,
+ramp-ad,
+[id^="div-gpt-ad"],
+.mobile-download-btn,
+.mobile-download-btn-text,
+[class*="mobile-download"] {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  visibility: hidden !important;
+}
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+/* Ensure game container and loading screen always use full viewport without ad margins */
+.container.has-a-div,
+.container.has-ad-vertical-lg,
+.container.hide-vertical {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.loading.band-vertical-lg,
+.loading.band-landscape,
+.loading.band-hide-vertical {
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+}
+/* Style CloudMoon in-game text input Send button ("送る") clearly */
+.input-div_div_button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 5px !important;
+  background: #1a73e8 !important;
+  color: #ffffff !important;
+  border-radius: 999px !important;
+  padding: 5px 14px !important;
+  cursor: pointer !important;
+  text-decoration: none !important;
+  font-family: 'Google Sans', 'Noto Sans JP', sans-serif !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25) !important;
+  transition: background 0.15s ease !important;
+}
+.input-div_div_button:hover {
+  background: #1557b0 !important;
+}
+.input-div_div_button::after {
+  content: "送る" !important;
+  font-size: 12px !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+/* ── Next Inline Block ── */
+
+body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    a{
+      color: rgba(123, 108, 196, 1);
+      text-decoration: none;
+    }
+    [data-ezoic-role="privacy-policy"] {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+    }
